@@ -1,8 +1,10 @@
 package com.content3;
+import javax.swing.*;
 
-public class Main {
-
+public class Main{
     public static void main(String[] args) {
-	// write your code here
+        MainFrame frame = new MainFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
 }
