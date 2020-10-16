@@ -127,12 +127,14 @@ public class MainFrame extends JFrame {
 
         // Создать подпись для поля с результатом
         JLabel labelForResult= new JLabel("Результат:");
-        textFieldResult= new JTextField("0",10);
+        textFieldResult= new JTextField("0",30);
+        textFieldResult.setMaximumSize(textFieldResult.getPreferredSize());
         // Создать контейнер «коробка с горизонтальной укладкой»
         Box hboxResult= Box.createHorizontalBox();
         hboxResult.add(Box.createHorizontalGlue());
         hboxResult.add(labelForResult);
         hboxResult.add(Box.createHorizontalStrut(10));
+        //hboxResult.add(Box.createRigidArea(new JTextField ("0",20));
         hboxResult.add(textFieldResult);
         hboxResult.add(Box.createHorizontalGlue());
         // Задать рамку для контейнера
